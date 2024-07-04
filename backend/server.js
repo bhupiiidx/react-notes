@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const app = express();
 dotenv.config();
 
-const PORT = process.env.BACKEND_PORT || 5000;
+const PORT = process.env.BACKEND_PORT || 8080;
 const notes = require("./data/todo_data.json");
 
 app.get("/", function (req, res, next) {
