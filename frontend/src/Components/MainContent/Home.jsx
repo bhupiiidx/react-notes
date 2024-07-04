@@ -3,7 +3,6 @@ import { Container, Carousel, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Home() {
-	const userInfo = JSON.parse(localStorage.getItem('userInfo'))
 	return (
 		<Container fluid>
 			<Container>
