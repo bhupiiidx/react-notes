@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Card, Button, Badge, Stack } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Note({ note }) {
 	const { title, id, userName, body } = note;
 	const [show, setShow] = useState(false);
+
+	const handleDelete = () => { }
 	return (
 		<Card className="w-100 mb-2">
 			<Card.Header className="d-flex justify-content-between">
@@ -11,8 +14,8 @@ function Note({ note }) {
 					{title}
 				</div>
 				<Stack direction="horizontal" gap={2}>
-					<Button>Edit</Button>
-					<Button className="ml-2" variant="danger">
+					<Link to={"/update/" + id}><Button>Edit</Button></Link>
+					<Button onClick={handleDelete} className="ml-2" variant="danger">
 						Delete
 					</Button>
 				</Stack>
