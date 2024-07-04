@@ -1,0 +1,24 @@
+{
+  "name": "react-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhupiiidx/react-note.git"
+  },
+  "author": "Bhupender Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhupiiidx/react-note/issues"
+  },
+  "homepage": "https://github.com/bhupiiidx/react-note#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
