@@ -14,6 +14,7 @@ function App() {
 				<Routes>
 					<Route path="" element={<MainContent />} exact>
 						<Route path="/" element={<Home />} />
+						<Route path="/profile" element={<Home />} />
 						<Route path="/my-notes" element={<Notes />} />
 						<Route path="/create" element={<CreateNote />} />
 						<Route path="/update/:note_id" element={<UpdateNote />} />

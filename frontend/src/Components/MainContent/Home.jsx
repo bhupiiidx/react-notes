@@ -3,6 +3,7 @@ import { Container, Carousel, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Home() {
+	const userInfo = JSON.parse(localStorage.getItem('userInfo'))
 	return (
 		<Container fluid>
 			<Container>
@@ -29,11 +30,13 @@ function Home() {
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>
-				<Container className="d-flex mt-3 justify-content-center">
-					<Button variant="primary">
-						<Link to="/my-notes">View Notes</Link>
-					</Button>
-				</Container>
+				<div className="mt-3 text-center">
+					<Link to="/my-notes">
+						<Button variant="primary">
+							View Notes
+						</Button>
+					</Link>
+				</div>
 			</Container>
 		</Container>
 	);

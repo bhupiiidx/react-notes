@@ -6,7 +6,7 @@ function DismissibleAlert({ title, message, variant = "danger" }) {
 
 	if (show && title) {
 		return (
-			<Alert variant={variant} onClose={() => setShow(false)} dismissible>
+			<Alert variant={variant} onClose={() => setShow(false)}>
 				{message ? (
 					<>
 						<Alert.Heading>{title}</Alert.Heading>
